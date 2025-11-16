@@ -238,6 +238,72 @@ export default function PremiumFooter() {
         </div>
 
         <div className="border-t border-navy-800 pt-12 pb-8">
+          <div className="grid md:grid-cols-2 gap-12 mb-12">
+            <div>
+              <h4 className="font-serif text-xl font-semibold mb-6 text-white">
+                Popular West Palm Beach Neighborhoods
+              </h4>
+              <div className="grid grid-cols-2 gap-x-4 gap-y-2">
+                {[
+                  { name: 'Flamingo Park', slug: 'flamingo-park' },
+                  { name: 'El Cid', slug: 'el-cid' },
+                  { name: 'Old Northwood', slug: 'old-northwood' },
+                  { name: 'Northwood Shores', slug: 'northwood-shores' },
+                  { name: 'Grandview Heights', slug: 'grandview-heights' },
+                  { name: 'SoSo (South of Southern)', slug: 'soso' },
+                  { name: 'Prospect Park', slug: 'prospect-park' },
+                  { name: 'Northwood Harbor', slug: 'northwood-harbor' },
+                  { name: 'Ibis Isle', slug: 'ibis-isle' },
+                  { name: 'Villages of Palm Beach Lakes', slug: 'villages-palm-beach-lakes' }
+                ].map((area) => (
+                  <Link
+                    key={area.slug}
+                    to={`/areas/${area.slug}`}
+                    className="text-navy-200 hover:text-gold-400 transition-colors text-sm py-1"
+                  >
+                    {area.name}
+                  </Link>
+                ))}
+              </div>
+              <Link
+                to="/areas-we-serve"
+                className="inline-block mt-4 text-gold-400 hover:text-gold-300 text-sm font-semibold"
+              >
+                View All 35+ Areas →
+              </Link>
+            </div>
+
+            <div>
+              <h4 className="font-serif text-xl font-semibold mb-6 text-white">
+                Palm Beach County Cities
+              </h4>
+              <div className="grid grid-cols-2 gap-x-4 gap-y-2">
+                {[
+                  { name: 'Palm Beach Gardens', slug: 'palm-beach-gardens' },
+                  { name: 'Jupiter', slug: 'jupiter' },
+                  { name: 'Wellington', slug: 'wellington' },
+                  { name: 'Boca Raton', slug: 'boca-raton' },
+                  { name: 'Delray Beach', slug: 'delray-beach' },
+                  { name: 'Boynton Beach', slug: 'boynton-beach' },
+                  { name: 'Lake Worth', slug: 'lake-worth' },
+                  { name: 'Palm Beach', slug: 'palm-beach' },
+                  { name: 'Royal Palm Beach', slug: 'royal-palm-beach' },
+                  { name: 'Tequesta', slug: 'tequesta' }
+                ].map((city) => (
+                  <Link
+                    key={city.slug}
+                    to={`/areas/${city.slug}`}
+                    className="text-navy-200 hover:text-gold-400 transition-colors text-sm py-1"
+                  >
+                    {city.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="border-t border-navy-800 pt-12 pb-8">
           <h4 className="font-serif text-xl font-semibold mb-8 text-white text-center">
             All Appraisal Services
           </h4>
