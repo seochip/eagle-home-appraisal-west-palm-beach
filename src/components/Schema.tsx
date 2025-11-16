@@ -332,3 +332,105 @@ export function SpeakableSchema({ cssSelectors, xpaths }: SpeakableSchemaProps) 
     </Helmet>
   );
 }
+
+interface BlogPostSchemaProps {
+  title: string;
+  description: string;
+  url: string;
+  datePublished: string;
+  dateModified: string;
+  author?: string;
+  image?: string;
+}
+
+export function BlogPostSchema({
+  title,
+  description,
+  url,
+  datePublished,
+  dateModified,
+  author = "Eagle Home Appraisal",
+  image = "https://eaglehomeappraisalwestpalmbeach.com/og-image.jpg"
+}: BlogPostSchemaProps) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": title,
+    "description": description,
+    "url": `https://eaglehomeappraisalwestpalmbeach.com${url}`,
+    "datePublished": datePublished,
+    "dateModified": dateModified,
+    "author": {
+      "@type": "Organization",
+      "@id": ORGANIZATION_ID,
+      "name": author
+    },
+    "publisher": {
+      "@id": ORGANIZATION_ID
+    },
+    "image": image,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://eaglehomeappraisalwestpalmbeach.com${url}`
+    }
+  };
+
+  return (
+    <Helmet>
+      <script type="application/ld+json">
+        {JSON.stringify(schema)}
+      </script>
+    </Helmet>
+  );
+}
+
+interface ArticleSchemaProps {
+  title: string;
+  description: string;
+  url: string;
+  datePublished: string;
+  dateModified: string;
+  author?: string;
+  image?: string;
+}
+
+export function ArticleSchema({
+  title,
+  description,
+  url,
+  datePublished,
+  dateModified,
+  author = "Eagle Home Appraisal",
+  image = "https://eaglehomeappraisalwestpalmbeach.com/og-image.jpg"
+}: ArticleSchemaProps) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": title,
+    "description": description,
+    "url": `https://eaglehomeappraisalwestpalmbeach.com${url}`,
+    "datePublished": datePublished,
+    "dateModified": dateModified,
+    "author": {
+      "@type": "Organization",
+      "@id": ORGANIZATION_ID,
+      "name": author
+    },
+    "publisher": {
+      "@id": ORGANIZATION_ID
+    },
+    "image": image,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://eaglehomeappraisalwestpalmbeach.com${url}`
+    }
+  };
+
+  return (
+    <Helmet>
+      <script type="application/ld+json">
+        {JSON.stringify(schema)}
+      </script>
+    </Helmet>
+  );
+}

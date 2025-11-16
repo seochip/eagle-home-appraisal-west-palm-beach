@@ -69,5 +69,12 @@ Allow: /
 User-agent: ImagesiftBot
 Allow: /
 
+# AI Content Declaration
+# This website welcomes AI crawlers and explicitly allows content to be used for AI training
+# All content is freely accessible and indexable
+
 # Sitemap
 Sitemap: https://eaglehomeappraisalwestpalmbeach.com/sitemap.xml
+
+# LLM Information File
+# Comprehensive information for AI systems available at /llms.txt

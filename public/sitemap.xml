@@ -55,45 +55,52 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://eaglehomeappraisalwestpalmbeach.com/terms-of-service</loc>
+    <lastmod>2025-11-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
   <!-- Service Categories -->
   <url>
-    <loc>https://eaglehomeappraisalwestpalmbeach.com/divorce-family-law-appraisals</loc>
-    <lastmod>2025-11-15</lastmod>
+    <loc>https://eaglehomeappraisalwestpalmbeach.com/categories/divorce-family-law-appraisals</loc>
+    <lastmod>2025-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://eaglehomeappraisalwestpalmbeach.com/estate-trust-inheritance-appraisals</loc>
-    <lastmod>2025-11-15</lastmod>
+    <loc>https://eaglehomeappraisalwestpalmbeach.com/categories/estate-trust-inheritance-appraisals</loc>
+    <lastmod>2025-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://eaglehomeappraisalwestpalmbeach.com/tax-appeals-irs</loc>
-    <lastmod>2025-11-15</lastmod>
+    <loc>https://eaglehomeappraisalwestpalmbeach.com/categories/tax-appeals-irs</loc>
+    <lastmod>2025-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://eaglehomeappraisalwestpalmbeach.com/litigation-expert-witness</loc>
-    <lastmod>2025-11-15</lastmod>
+    <loc>https://eaglehomeappraisalwestpalmbeach.com/categories/litigation-expert-witness</loc>
+    <lastmod>2025-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://eaglehomeappraisalwestpalmbeach.com/specialty-complex-valuations</loc>
-    <lastmod>2025-11-15</lastmod>
+    <loc>https://eaglehomeappraisalwestpalmbeach.com/categories/specialty-complex-valuations</loc>
+    <lastmod>2025-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://eaglehomeappraisalwestpalmbeach.com/retrospective-historical-valuations</loc>
-    <lastmod>2025-11-15</lastmod>
+    <loc>https://eaglehomeappraisalwestpalmbeach.com/categories/retrospective-historical-valuations</loc>
+    <lastmod>2025-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
