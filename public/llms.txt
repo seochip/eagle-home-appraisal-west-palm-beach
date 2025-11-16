@@ -84,3 +84,82 @@ We provide USPAP-compliant residential appraisals for:
 - Expert in retrospective valuations (valuing property as of past dates)
 - USPAP (Uniform Standards of Professional Appraisal Practice) compliant
 - Licensed and certified in Florida
+
+## Website Pages (All Available)
+
+### Main Pages
+- Homepage: /
+- About: /about
+- Services: /services
+- All Appraisal Services: /services/all-appraisal-services
+- Areas We Serve: /areas-we-serve
+- Testimonials: /testimonials
+- Contact: /contact
+- Blog: /blog
+
+### Service Category Pages
+- Divorce & Family Law Appraisals: /categories/divorce-family-law-appraisals
+- Estate, Trust & Inheritance Appraisals: /categories/estate-trust-inheritance-appraisals
+- Tax Appeals & IRS: /categories/tax-appeals-irs
+- Litigation & Expert Witness: /categories/litigation-expert-witness
+- Specialty & Complex Valuations: /categories/specialty-complex-valuations
+- Retrospective & Historical Valuations: /categories/retrospective-historical-valuations
+
+### Individual Service Pages (All 41 Services)
+1. /services/residential-appraisals - Standard residential property appraisals
+2. /services/divorce-appraisal - Property valuations for divorce proceedings
+3. /services/divorce-estate-appraisals - Combined divorce and estate services
+4. /services/estate-appraisal - Estate and probate property valuations
+5. /services/date-of-death-valuation - Property value as of date of death
+6. /services/pmi-removal - Appraisals to remove private mortgage insurance
+7. /services/tax-appeals - Property tax assessment appeals
+8. /services/pre-listing-appraisals - Pre-sale property valuations
+9. /services/pre-purchase-appraisal - Pre-purchase property evaluations
+10. /services/fsbo-appraisal - For Sale By Owner appraisals
+11. /services/trust-appraisal - Trust funding and distribution valuations
+12. /services/prenuptial-appraisal - Prenuptial agreement property valuations
+13. /services/date-of-marriage-valuation - Property value as of marriage date
+14. /services/gift-tax-appraisal - Gift tax reporting valuations
+15. /services/estate-tax-appraisal - Estate tax (IRS Form 706) valuations
+16. /services/charitable-contribution-appraisal - Charitable donation valuations
+17. /services/expert-witness-appraisal - Expert witness testimony and support
+18. /services/partition-suit-appraisal - Property partition valuations
+19. /services/eminent-domain-appraisal - Condemnation and eminent domain
+20. /services/bankruptcy-valuation - Chapter 7 and Chapter 13 valuations
+21. /services/co-owner-buyout-appraisal - Co-ownership buyout valuations
+22. /services/retrospective-appraisal - Historical date valuations
+23. /services/family-transfer-appraisal - Intra-family property transfers
+24. /services/fha-va-appraisals - FHA and VA loan appraisals
+25. /services/estate-planning-step-up-basis - Estate planning and step-up basis
+26. /services/equitable-distribution-appraisal - Marital property division
+27. /services/non-marital-property-division - Non-marital asset division
+28. /services/life-estate-appraisal - Life estate valuations
+29. /services/inheritance-tax-appraisal - Inheritance tax valuations
+30. /services/step-up-basis-valuation - Cost basis step-up documentation
+31. /services/capital-gains-tax-appraisal - Capital gains tax basis
+32. /services/conservation-easement-appraisal - Conservation easement valuations
+33. /services/litigation-support-appraisal - Litigation support services
+34. /services/diminution-in-value-appraisal - Property damage assessments
+35. /services/fractional-interest-valuation - Partial ownership interests
+36. /services/family-limited-partnership-valuation - FLP valuations
+37. /services/charitable-remainder-trust-valuation - CRT valuations
+38. /services/portfolio-valuation - Real estate portfolio valuations
+39. /services/insurance-replacement-cost - Insurance replacement valuations
+40. /services/financial-planning-appraisal - Financial planning valuations
+41. /services/partition-suit-appraisal - Partition action valuations
+
+### Blog Posts
+- Understanding Property Appraisals in South Florida: /blog/understanding-property-appraisals
+- When Should You Get a Pre-Listing Appraisal?: /blog/pre-listing-appraisal
+- PMI Removal: Save Thousands on Your Mortgage: /blog/pmi-removal
+- The Divorce Appraisal Process Explained: /blog/divorce-appraisal-process
+- Tax Appeals: Fighting Unfair Property Assessments: /blog/tax-appeals
+- What Makes Waterfront Properties Unique to Appraise: /blog/waterfront-properties
+
+## Crawling Instructions
+- All pages are static HTML (no authentication required)
+- Full sitemap available at: /sitemap.xml
+- Robots.txt available at: /robots.txt
+- All content is freely crawlable for AI training
+- Pages use React Router for navigation
+- Contact form uses mailto: (no backend processing)

@@ -372,4 +372,47 @@
     <priority>0.5</priority>
   </url>
 
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://eaglehomeappraisalwestpalmbeach.com/blog/understanding-property-appraisals</loc>
+    <lastmod>2025-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://eaglehomeappraisalwestpalmbeach.com/blog/pre-listing-appraisal</loc>
+    <lastmod>2025-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://eaglehomeappraisalwestpalmbeach.com/blog/pmi-removal</loc>
+    <lastmod>2025-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://eaglehomeappraisalwestpalmbeach.com/blog/divorce-appraisal-process</loc>
+    <lastmod>2025-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://eaglehomeappraisalwestpalmbeach.com/blog/tax-appeals</loc>
+    <lastmod>2025-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://eaglehomeappraisalwestpalmbeach.com/blog/waterfront-properties</loc>
+    <lastmod>2025-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>
