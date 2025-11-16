@@ -92,10 +92,51 @@ We provide USPAP-compliant residential appraisals for:
 - About: /about
 - Services: /services
 - All Appraisal Services: /services/all-appraisal-services
-- Areas We Serve: /areas-we-serve
+- Areas We Serve: /areas-we-serve (Complete hub with 35+ neighborhoods and cities)
 - Testimonials: /testimonials
 - Contact: /contact
 - Blog: /blog
+
+### Geographic Area Pages (35 Total)
+
+#### West Palm Beach Neighborhoods (20)
+1. /areas/flamingo-park - Flamingo Park (Historic, Mediterranean Revival homes, $450k median)
+2. /areas/el-cid - El Cid (Spanish Colonial architecture, $485k median)
+3. /areas/grandview-heights - Grandview Heights (Lakefront, upscale historic, $525k median)
+4. /areas/prospect-park - Prospect Park (1920s bungalows, $420k median)
+5. /areas/old-northwood - Old Northwood (Historic preservation district, $395k median)
+6. /areas/northwood - Northwood (Established community, $325k median)
+7. /areas/northwood-shores - Northwood Shores (Waterfront, canal access, $580k median)
+8. /areas/northwood-harbor - Northwood Harbor (Canal-front properties, $620k median)
+9. /areas/northwood-hills - Northwood Hills (Tree-lined streets, $365k median)
+10. /areas/soso - SoSo/South of Southern (Trendy arts district, $380k median)
+11. /areas/southland-park - Southland Park (Family-friendly, $340k median)
+12. /areas/vedado - Vedado (Compact, diverse housing, $315k median)
+13. /areas/south-olive - South Olive (Mixed-use near downtown, $295k median)
+14. /areas/villages-palm-beach-lakes - Villages of Palm Beach Lakes ($285k median)
+15. /areas/westgate - Westgate (West of downtown, $275k median)
+16. /areas/wyndam-park - Wyndam Park (Single-family homes, $260k median)
+17. /areas/pleasant-city - Pleasant City (Affordable housing, $245k median)
+18. /areas/ibis-isle - Ibis Isle (Exclusive waterfront, $1.2M median)
+19. /areas/casa-costa - Casa Costa (Mediterranean waterfront, $780k median)
+20. /areas/lakeside-green - Lakeside Green (Lakefront community, $320k median)
+
+#### Palm Beach County Cities (15)
+21. /areas/palm-beach-gardens - Palm Beach Gardens (PGA National, Frenchman's Reserve, $485k median, 59k pop)
+22. /areas/jupiter - Jupiter (Jupiter Island, Abacoa, Jupiter Farms, $520k median, 61k pop)
+23. /areas/wellington - Wellington (Equestrian capital, premier horse properties, $520k median, 61k pop)
+24. /areas/boca-raton - Boca Raton (Mizner Park, luxury communities, $575k median, 98k pop)
+25. /areas/delray-beach - Delray Beach (Atlantic Avenue, vibrant coastal, $465k median, 69k pop)
+26. /areas/boynton-beach - Boynton Beach (Ocean Ridge, Canyon Lakes, $340k median, 78k pop)
+27. /areas/lake-worth - Lake Worth (College Park, Palm Heights, $285k median, 42k pop)
+28. /areas/riviera-beach - Riviera Beach (Singer Island, Harbour Isle, $395k median, 35k pop)
+29. /areas/north-palm-beach - North Palm Beach (Lost Tree Village, $625k median, 13k pop)
+30. /areas/palm-beach - Palm Beach (Worth Avenue, luxury estates, $3.5M median, 9k pop)
+31. /areas/royal-palm-beach - Royal Palm Beach (Madison Green, Toscana, $365k median, 41k pop)
+32. /areas/juno-beach - Juno Beach (Beachfront condos, $685k median, 3.5k pop)
+33. /areas/tequesta - Tequesta (Jupiter Hills, country club, $595k median, 6k pop)
+34. /areas/greenacres - Greenacres (Family-friendly, $265k median, 41k pop)
+35. /areas/lantana - Lantana (Hypoluxo Island, oceanfront, $385k median, 11k pop)
 
 ### Service Category Pages
 - Divorce & Family Law Appraisals: /categories/divorce-family-law-appraisals

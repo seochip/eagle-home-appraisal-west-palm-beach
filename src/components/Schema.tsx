@@ -1,13 +1,12 @@
 import { Helmet } from 'react-helmet-async';
 
-interface BreadcrumbItem {
-  name: string;
-  path: string;
+const ORGANIZATION_ID = 'https://eaglehomeappraisalwestpalmbeach.com/#organization';
+
+interface OrganizationSchemaProps {
+  showFull?: boolean;
 }
 
-const ORGANIZATION_ID = "https://eaglehomeappraisalwestpalmbeach.com/#organization";
-
-export function OrganizationSchema() {
+export function OrganizationSchema({ showFull = false }: OrganizationSchemaProps = {}) {
   const schema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -39,35 +38,88 @@ export function OrganizationSchema() {
       "Palm Beach County",
       "South Florida"
     ],
-    "priceRange": "$$$",
-    "sameAs": [
-      "https://www.facebook.com/eaglehomeappraisalwestpalmbeach",
-      "https://www.linkedin.com/company/eaglehomeappraisalwestpalmbeach",
-      "https://www.instagram.com/ehawestpalmbeach/",
-      "https://x.com/ehapalmbeach",
-      "https://www.pinterest.com/ehawestpalmbeach/",
-      "https://www.tiktok.com/@ehawestpalmbeach",
-      "https://www.youtube.com/@ehawestpalmbeach"
-    ],
-    "openingHoursSpecification": [
+    "priceRange": "$$$"
+  };
+
+  if (showFull) {
+    Object.assign(schema, {
+      "sameAs": [
+        "https://www.facebook.com/eaglehomeappraisalwestpalmbeach",
+        "https://www.linkedin.com/company/eaglehomeappraisalwestpalmbeach",
+        "https://www.instagram.com/ehawestpalmbeach/",
+        "https://x.com/ehapalmbeach",
+        "https://www.pinterest.com/ehawestpalmbeach/",
+        "https://www.tiktok.com/@ehawestpalmbeach",
+        "https://www.youtube.com/@ehawestpalmbeach"
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "07:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "17:00"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "150"
+      }
+    });
+  }
+
+  return (
+    <Helmet>
+      <script type="application/ld+json">
+        {JSON.stringify(schema)}
+      </script>
+    </Helmet>
+  );
+}
+
+interface ServiceSchemaProps {
+  name: string;
+  description: string;
+  url: string;
+  serviceType: string;
+  areaServed?: string[];
+  provider?: {
+    name: string;
+    '@id': string;
+  };
+}
+
+export function ServiceSchema({ name, description, url, serviceType, areaServed, provider }: ServiceSchemaProps) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": name,
+    "description": description,
+    "url": `https://eaglehomeappraisalwestpalmbeach.com${url}`,
+    "serviceType": serviceType,
+    "provider": provider || {
+      "@id": ORGANIZATION_ID
+    },
+    "areaServed": areaServed || [
       {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "07:00",
-        "closes": "19:00"
+        "@type": "City",
+        "name": "West Palm Beach",
+        "containedIn": {
+          "@type": "AdministrativeArea",
+          "name": "Palm Beach County"
+        }
       },
       {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Saturday",
-        "opens": "09:00",
-        "closes": "17:00"
+        "@type": "AdministrativeArea",
+        "name": "Palm Beach County"
       }
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "150"
-    }
+    ]
   };
 
   return (
@@ -77,6 +129,11 @@ export function OrganizationSchema() {
       </script>
     </Helmet>
   );
+}
+
+interface BreadcrumbItem {
+  name: string;
+  path?: string;
 }
 
 interface BreadcrumbSchemaProps {
@@ -98,7 +155,9 @@ export function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
         "@type": "ListItem",
         "position": index + 2,
         "name": item.name,
-        "item": `https://eaglehomeappraisalwestpalmbeach.com${item.path}`
+        "item": item.path
+          ? `https://eaglehomeappraisalwestpalmbeach.com${item.path}`
+          : undefined
       }))
     ]
   };
@@ -112,8 +171,13 @@ export function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
   );
 }
 
+interface FAQItem {
+  question: string;
+  answer: string;
+}
+
 interface FAQSchemaProps {
-  faqs: Array<{ question: string; answer: string }>;
+  faqs: FAQItem[];
 }
 
 export function FAQSchema({ faqs }: FAQSchemaProps) {
@@ -139,70 +203,41 @@ export function FAQSchema({ faqs }: FAQSchemaProps) {
   );
 }
 
-interface ServicePageSchemaProps {
+interface ItemListItem {
   name: string;
-  description: string;
   url: string;
-  breadcrumbs: BreadcrumbItem[];
-  faqs?: Array<{ question: string; answer: string }>;
+  description?: string;
+  position?: number;
 }
 
-export function ServicePageSchema({ name, description, url, breadcrumbs, faqs }: ServicePageSchemaProps) {
-  const schemas = [];
+interface ItemListSchemaProps {
+  name: string;
+  description: string;
+  items: ItemListItem[];
+  itemListOrder?: 'Ascending' | 'Descending' | 'Unordered';
+}
 
-  const serviceSchema = {
+export function ItemListSchema({ name, description, items, itemListOrder = 'Unordered' }: ItemListSchemaProps) {
+  const schema = {
     "@context": "https://schema.org",
-    "@type": "Service",
+    "@type": "ItemList",
     "name": name,
     "description": description,
-    "url": `https://eaglehomeappraisalwestpalmbeach.com${url}`,
-    "provider": {
-      "@id": ORGANIZATION_ID
-    },
-    "areaServed": "Palm Beach County, FL"
+    "itemListOrder": `https://schema.org/ItemList${itemListOrder}`,
+    "numberOfItems": items.length,
+    "itemListElement": items.map((item, index) => ({
+      "@type": "ListItem",
+      "position": item.position || index + 1,
+      "name": item.name,
+      "url": `https://eaglehomeappraisalwestpalmbeach.com${item.url}`,
+      "description": item.description
+    }))
   };
-  schemas.push(serviceSchema);
-
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://eaglehomeappraisalwestpalmbeach.com/"
-      },
-      ...breadcrumbs.map((item, index) => ({
-        "@type": "ListItem",
-        "position": index + 2,
-        "name": item.name,
-        "item": `https://eaglehomeappraisalwestpalmbeach.com${item.path}`
-      }))
-    ]
-  };
-  schemas.push(breadcrumbSchema);
-
-  if (faqs && faqs.length > 0) {
-    const faqSchema = {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": faqs.map(faq => ({
-        "@type": "Question",
-        "name": faq.question,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": faq.answer
-        }
-      }))
-    };
-    schemas.push(faqSchema);
-  }
 
   return (
     <Helmet>
       <script type="application/ld+json">
-        {JSON.stringify(schemas)}
+        {JSON.stringify(schema)}
       </script>
     </Helmet>
   );
@@ -212,79 +247,21 @@ interface CollectionPageSchemaProps {
   name: string;
   description: string;
   url: string;
-  breadcrumbs: BreadcrumbItem[];
-  items: Array<{ name: string; url: string }>;
 }
 
-export function CollectionPageSchema({ name, description, url, breadcrumbs, items }: CollectionPageSchemaProps) {
-  const schemas = [];
-
-  const collectionSchema = {
+export function CollectionPageSchema({ name, description, url }: CollectionPageSchemaProps) {
+  const schema = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": name,
     "description": description,
     "url": `https://eaglehomeappraisalwestpalmbeach.com${url}`,
-    "publisher": {
-      "@id": ORGANIZATION_ID
+    "isPartOf": {
+      "@id": "https://eaglehomeappraisalwestpalmbeach.com/#website"
     },
-    "mainEntity": {
-      "@type": "ItemList",
-      "numberOfItems": items.length,
-      "itemListElement": items.map((item, index) => ({
-        "@type": "ListItem",
-        "position": index + 1,
-        "name": item.name,
-        "url": `https://eaglehomeappraisalwestpalmbeach.com${item.url}`
-      }))
-    }
-  };
-  schemas.push(collectionSchema);
-
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://eaglehomeappraisalwestpalmbeach.com/"
-      },
-      ...breadcrumbs.map((item, index) => ({
-        "@type": "ListItem",
-        "position": index + 2,
-        "name": item.name,
-        "item": `https://eaglehomeappraisalwestpalmbeach.com${item.path}`
-      }))
-    ]
-  };
-  schemas.push(breadcrumbSchema);
-
-  return (
-    <Helmet>
-      <script type="application/ld+json">
-        {JSON.stringify(schemas)}
-      </script>
-    </Helmet>
-  );
-}
-
-export function LocalBusinessSchema({ name = 'Eagle Home Appraisal', description = 'Independent real estate appraiser in West Palm Beach, FL specializing in divorce, estate, tax appeal, and private valuations.' }: { name?: string; description?: string }) {
-  return <OrganizationSchema />;
-}
-
-export function ServiceSchema({ name, description, serviceType }: { name: string; description: string; serviceType: string }) {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "serviceType": serviceType,
-    "name": name,
-    "description": description,
     "provider": {
       "@id": ORGANIZATION_ID
-    },
-    "areaServed": "Palm Beach County, FL"
+    }
   };
 
   return (
@@ -432,5 +409,226 @@ export function ArticleSchema({
         {JSON.stringify(schema)}
       </script>
     </Helmet>
+  );
+}
+
+interface HowToStep {
+  name: string;
+  text: string;
+  url?: string;
+}
+
+interface HowToSchemaProps {
+  name: string;
+  description: string;
+  steps: HowToStep[];
+  totalTime?: string;
+  estimatedCost?: {
+    currency: string;
+    value: string;
+  };
+}
+
+export function HowToSchema({ name, description, steps, totalTime, estimatedCost }: HowToSchemaProps) {
+  const schema: Record<string, any> = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": name,
+    "description": description,
+    "step": steps.map((step, index) => ({
+      "@type": "HowToStep",
+      "position": index + 1,
+      "name": step.name,
+      "text": step.text,
+      "url": step.url
+    })),
+    "provider": {
+      "@id": ORGANIZATION_ID
+    }
+  };
+
+  if (totalTime) schema.totalTime = totalTime;
+  if (estimatedCost) schema.estimatedCost = estimatedCost;
+
+  return (
+    <Helmet>
+      <script type="application/ld+json">
+        {JSON.stringify(schema)}
+      </script>
+    </Helmet>
+  );
+}
+
+interface PlaceSchemaProps {
+  name: string;
+  description: string;
+  address?: {
+    streetAddress?: string;
+    addressLocality: string;
+    addressRegion: string;
+    postalCode?: string;
+    addressCountry?: string;
+  };
+  geo?: {
+    latitude: string;
+    longitude: string;
+  };
+  containedInPlace?: string;
+}
+
+export function PlaceSchema({ name, description, address, geo, containedInPlace }: PlaceSchemaProps) {
+  const schema: Record<string, any> = {
+    "@context": "https://schema.org",
+    "@type": "Place",
+    "name": name,
+    "description": description
+  };
+
+  if (address) {
+    schema.address = {
+      "@type": "PostalAddress",
+      ...address
+    };
+  }
+
+  if (geo) {
+    schema.geo = {
+      "@type": "GeoCoordinates",
+      "latitude": geo.latitude,
+      "longitude": geo.longitude
+    };
+  }
+
+  if (containedInPlace) {
+    schema.containedInPlace = {
+      "@type": "Place",
+      "name": containedInPlace
+    };
+  }
+
+  return (
+    <Helmet>
+      <script type="application/ld+json">
+        {JSON.stringify(schema)}
+      </script>
+    </Helmet>
+  );
+}
+
+interface ReviewSchemaProps {
+  itemName: string;
+  itemType?: string;
+  author: string;
+  datePublished: string;
+  reviewBody: string;
+  ratingValue: number;
+  bestRating?: number;
+  worstRating?: number;
+}
+
+export function ReviewSchema({
+  itemName,
+  itemType = "LocalBusiness",
+  author,
+  datePublished,
+  reviewBody,
+  ratingValue,
+  bestRating = 5,
+  worstRating = 1
+}: ReviewSchemaProps) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Review",
+    "itemReviewed": {
+      "@type": itemType,
+      "@id": ORGANIZATION_ID,
+      "name": itemName
+    },
+    "author": {
+      "@type": "Person",
+      "name": author
+    },
+    "datePublished": datePublished,
+    "reviewBody": reviewBody,
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": ratingValue,
+      "bestRating": bestRating,
+      "worstRating": worstRating
+    }
+  };
+
+  return (
+    <Helmet>
+      <script type="application/ld+json">
+        {JSON.stringify(schema)}
+      </script>
+    </Helmet>
+  );
+}
+
+interface VideoObjectSchemaProps {
+  name: string;
+  description: string;
+  thumbnailUrl: string;
+  uploadDate: string;
+  contentUrl?: string;
+  embedUrl?: string;
+  duration?: string;
+}
+
+export function VideoObjectSchema({
+  name,
+  description,
+  thumbnailUrl,
+  uploadDate,
+  contentUrl,
+  embedUrl,
+  duration
+}: VideoObjectSchemaProps) {
+  const schema: Record<string, any> = {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": name,
+    "description": description,
+    "thumbnailUrl": thumbnailUrl,
+    "uploadDate": uploadDate
+  };
+
+  if (contentUrl) schema.contentUrl = contentUrl;
+  if (embedUrl) schema.embedUrl = embedUrl;
+  if (duration) schema.duration = duration;
+
+  return (
+    <Helmet>
+      <script type="application/ld+json">
+        {JSON.stringify(schema)}
+      </script>
+    </Helmet>
+  );
+}
+
+interface ServicePageSchemaProps {
+  name: string;
+  description: string;
+  url: string;
+  breadcrumbs: Array<{ name: string; path: string }>;
+  faqs: Array<{ question: string; answer: string }>;
+}
+
+export function ServicePageSchema({ name, description, url, breadcrumbs, faqs }: ServicePageSchemaProps) {
+  return (
+    <>
+      <ServiceSchema
+        name={name}
+        description={description}
+        url={url}
+        serviceType="Real Estate Appraisal"
+      />
+      <BreadcrumbSchema
+        items={breadcrumbs.map(item => ({ name: item.name, path: item.path }))}
+      />
+      <FAQSchema faqs={faqs} />
+    </>
   );
 }
