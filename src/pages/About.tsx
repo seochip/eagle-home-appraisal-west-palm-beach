@@ -72,7 +72,7 @@ export default function About() {
               >
                 <div className="w-full max-w-md aspect-square rounded-2xl overflow-hidden shadow-2xl">
                   <img
-                    src="https://rayhallappraisals.com/wp-content/uploads/2020/06/Ray-Hall-Headshot.jpg"
+                    src="/Ray Hall Standing in a Suit.jpg"
                     alt="Ray Hall - Certified General Appraiser"
                     className="w-full h-full object-cover"
                   />
