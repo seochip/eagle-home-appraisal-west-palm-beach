@@ -54,13 +54,13 @@ export default function AreasWeServe() {
             >
               <div className="aspect-[21/9] w-full">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224104.83816198452!2d-80.23351974999999!3d26.7153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d8d678c3733fc1%3A0x4e5622e8dd44c4ff!2sWest%20Palm%20Beach%2C%20FL!5e0!3m2!1sen!2sus!4v1635000000000!5m2!1sen!2sus"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d456890.77867729726!2d-80.43629064443123!3d26.708048841476043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d8d5d318c2fb71%3A0x75bf9a82b765052d!2sPalm%20Beach%20County%2C%20FL!5e0!3m2!1sen!2sus!4v1731783600000!5m2!1sen!2sus"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
-                  title="Eagle Home Appraisal Service Area Map - West Palm Beach and Palm Beach County"
+                  title="Eagle Home Appraisal Service Area Map - Palm Beach County, Florida"
                   className="grayscale hover:grayscale-0 transition-all duration-500"
                 />
               </div>
