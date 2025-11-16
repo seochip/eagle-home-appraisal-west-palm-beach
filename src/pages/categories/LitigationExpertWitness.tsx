@@ -3,7 +3,7 @@ import { Phone } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import Breadcrumb from '../../components/Breadcrumb';
-import { CollectionPageSchema, OrganizationSchema } from '../../components/Schema';
+import { CollectionPageSchema, OrganizationSchema, SpeakableSchema } from '../../components/Schema';
 
 export default function LitigationExpertWitness() {
   const services = [
@@ -29,6 +29,7 @@ export default function LitigationExpertWitness() {
         breadcrumbs={[{ name: 'Services', path: '/services' }]}
         items={services.map(s => ({ name: s.name, url: s.path }))}
       />
+      <SpeakableSchema cssSelectors={['h1', 'h2', '.text-navy-700']} />
 
       <div className="min-h-screen bg-white pt-24 lg:pt-32">
         <section className="py-16 px-4 sm:px-6 lg:px-8">

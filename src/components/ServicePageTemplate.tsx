@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import Breadcrumb from './Breadcrumb';
 import RelatedServices from './RelatedServices';
 import FAQSection from './FAQSection';
-import { ServicePageSchema } from './Schema';
+import { ServicePageSchema, SpeakableSchema } from './Schema';
 
 interface ServicePageProps {
   title: string;
@@ -47,6 +47,7 @@ export default function ServicePageTemplate({
         ]}
         faqs={faqs}
       />
+      <SpeakableSchema cssSelectors={['h1', 'h2', '.prose']} />
 
       <div className="min-h-screen bg-white pt-24 lg:pt-32">
         <section className="py-16 px-4 sm:px-6 lg:px-8">

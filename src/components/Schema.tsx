@@ -295,3 +295,40 @@ export function ServiceSchema({ name, description, serviceType }: { name: string
     </Helmet>
   );
 }
+
+interface SpeakableSchemaProps {
+  cssSelectors?: string[];
+  xpaths?: string[];
+}
+
+export function SpeakableSchema({ cssSelectors, xpaths }: SpeakableSchemaProps) {
+  const speakable: {
+    "@type": string;
+    cssSelector?: string[];
+    xpath?: string[];
+  } = {
+    "@type": "SpeakableSpecification"
+  };
+
+  if (cssSelectors && cssSelectors.length > 0) {
+    speakable.cssSelector = cssSelectors;
+  }
+
+  if (xpaths && xpaths.length > 0) {
+    speakable.xpath = xpaths;
+  }
+
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "speakable": speakable
+  };
+
+  return (
+    <Helmet>
+      <script type="application/ld+json">
+        {JSON.stringify(schema)}
+      </script>
+    </Helmet>
+  );
+}
