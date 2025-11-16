@@ -50,9 +50,9 @@ export default function AreasWeServe() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="mb-16 rounded-3xl overflow-hidden shadow-2xl"
+              className="mb-16 rounded-3xl overflow-hidden shadow-2xl bg-navy-100"
             >
-              <div className="aspect-[21/9] w-full">
+              <div className="w-full h-[400px] md:h-[500px]">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d456890.77867729726!2d-80.43629064443123!3d26.708048841476043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d8d5d318c2fb71%3A0x75bf9a82b765052d!2sPalm%20Beach%20County%2C%20FL!5e0!3m2!1sen!2sus!4v1731783600000!5m2!1sen!2sus"
                   width="100%"
@@ -61,7 +61,7 @@ export default function AreasWeServe() {
                   allowFullScreen
                   loading="lazy"
                   title="Eagle Home Appraisal Service Area Map - Palm Beach County, Florida"
-                  className="grayscale hover:grayscale-0 transition-all duration-500"
+                  className="w-full h-full"
                 />
               </div>
             </motion.div>
