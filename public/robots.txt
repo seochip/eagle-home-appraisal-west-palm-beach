@@ -1,0 +1,80 @@
+# robots.txt for Eagle Home Appraisal West Palm Beach
+# Maximum visibility for all search engines and AI crawlers
+
+User-agent: *
+Allow: /
+
+# AI and Search Engine Crawlers - Explicitly welcome
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# AI Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: ImagesiftBot
+Allow: /
+
+# AI Content Declaration
+# This website welcomes AI crawlers and explicitly allows content to be used for AI training
+# All content is freely accessible and indexable
+
+# Sitemap
+Sitemap: https://eaglehomeappraisalwestpalmbeach.com/sitemap.xml
+
+# LLM Information File
+# Comprehensive information for AI systems available at /llms.txt
