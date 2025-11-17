@@ -72,7 +72,7 @@ export default function About() {
               >
                 <div className="w-full max-w-md aspect-square rounded-2xl overflow-hidden shadow-2xl">
                   <img
-                    src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    src="/Ray Hall Standing in a Suit copy copy copy copy copy.jpg"
                     alt="Ray Hall - Certified General Appraiser"
                     className="w-full h-full object-cover"
                   />
