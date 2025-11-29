@@ -80,7 +80,7 @@ export default function PremiumFooter() {
           <div className="space-y-6">
             <Link to="/" className="inline-block">
               <img
-                src="https://eaglehomeappraisalwilmington.com/wp-content/uploads/2024/04/eagle-home-appraisal-logo-white.png"
+                src="/eagle-logo-white.png"
                 alt="Eagle Home Appraisal Logo"
                 className="h-16 w-auto mb-4"
               />

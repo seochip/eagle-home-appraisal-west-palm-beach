@@ -65,8 +65,8 @@ export default function PremiumHeader() {
             <Link to="/" className="flex items-center space-x-3">
               <img
                 src={(isScrolled || !isHomePage)
-                  ? "https://eaglehomeappraisalwilmington.com/wp-content/uploads/2024/04/eagle-home-appraisal-logo.png"
-                  : "https://eaglehomeappraisalwilmington.com/wp-content/uploads/2024/04/eagle-home-appraisal-logo-white.png"
+                  ? "/eagle-logo.png"
+                  : "/eagle-logo-white.png"
                 }
                 alt="Eagle Home Appraisal Logo"
                 className="h-12 lg:h-16 w-auto transition-opacity duration-300"
@@ -213,7 +213,7 @@ export default function PremiumHeader() {
                 <div className="flex items-center justify-between p-6 border-b border-navy-100">
                   <div className="flex items-center space-x-2">
                     <img
-                      src="https://eaglehomeappraisalwilmington.com/wp-content/uploads/2024/04/eagle-home-appraisal-logo.png"
+                      src="/eagle-logo.png"
                       alt="Eagle Home Appraisal Logo"
                       className="h-10 w-auto"
                     />
