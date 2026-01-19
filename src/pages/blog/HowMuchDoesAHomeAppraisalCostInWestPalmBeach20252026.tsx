@@ -59,7 +59,7 @@ export default function HowMuchDoesAHomeAppraisalCostInWestPalmBeach20252026() {
               </p>
 
               <p className="text-xl mb-8">
-                So, what's the real answer? In West Palm Beach, most residential appraisals cost between <strong>$400 and $600</strong> for a standard single-family home. But that number can shift depending on property type, size, complexity, and even your timeline. Let's break it all down so you know exactly what to expect—and what you're paying for.
+                So, what's the real answer? In West Palm Beach, most residential appraisals cost between <strong>$400 and $600</strong> for a standard single-family home. But that number can shift depending on property type, size, complexity, and even your timeline. Let's break it all down so you know exactly what to expect and what you're paying for.
               </p>
 
               <h2 className="font-serif text-3xl font-bold text-navy-900 mb-6 mt-12">
@@ -71,42 +71,42 @@ export default function HowMuchDoesAHomeAppraisalCostInWestPalmBeach20252026() {
               </p>
 
               <h3 className="font-serif text-2xl font-semibold text-navy-900 mb-4 mt-8">
-                Property Type and Size
+                1. Property Type and Size
               </h3>
               <p className="mb-6">
                 A 1,200-square-foot condo on Clematis Street? That'll run cheaper than a 4,500-square-foot waterfront estate in Juno Beach. Larger, more complex properties take longer to inspect and analyze, which drives up the cost.
               </p>
 
               <h3 className="font-serif text-2xl font-semibold text-navy-900 mb-4 mt-8">
-                Location and Accessibility
+                2. Location and Accessibility
               </h3>
               <p className="mb-6">
                 Appraisers in high-demand areas like downtown West Palm Beach or exclusive gated communities may charge more due to market dynamics. Remote or hard-to-access properties can also increase fees.
               </p>
 
               <h3 className="font-serif text-2xl font-semibold text-navy-900 mb-4 mt-8">
-                Purpose of the Appraisal
+                3. Purpose of the Appraisal
               </h3>
               <p className="mb-4">
                 Different appraisal types come with different price tags:
               </p>
               <ul className="list-disc list-inside mb-6 space-y-2">
-                <li>Standard Purchase Appraisal: $400–$600</li>
-                <li>Refinance Appraisal: $400–$600</li>
-                <li>FHA/VA Loan Appraisal: $500–$700</li>
-                <li>Estate or Divorce Appraisal: $600–$1,000+</li>
-                <li>Complex or Retrospective Appraisals: $800–$1,500+</li>
+                <li>Standard Purchase Appraisal: $400-$600</li>
+                <li>Refinance Appraisal: $400-$600</li>
+                <li>FHA/VA Loan Appraisal: $500-$700</li>
+                <li>Estate or Divorce Appraisal: $600-$1,000+</li>
+                <li>Complex or Retrospective Appraisals: $800-$1,500+</li>
               </ul>
 
               <h3 className="font-serif text-2xl font-semibold text-navy-900 mb-4 mt-8">
-                Turnaround Time
+                4. Turnaround Time
               </h3>
               <p className="mb-6">
-                Need it fast? Rush orders (24–48 hours) can cost 20–50% more than standard turnaround times (5–7 business days).
+                Need it fast? Rush orders (24-48 hours) can cost 20-50% more than standard turnaround times (5-7 business days).
               </p>
 
               <h3 className="font-serif text-2xl font-semibold text-navy-900 mb-4 mt-8">
-                Market Conditions
+                5. Market Conditions
               </h3>
               <p className="mb-6">
                 When real estate is booming and appraisers are swamped, prices may edge higher. Conversely, during slower periods, you might find more competitive rates.
@@ -132,27 +132,27 @@ export default function HowMuchDoesAHomeAppraisalCostInWestPalmBeach20252026() {
                       <tbody className="divide-y divide-navy-100">
                         <tr className="hover:bg-navy-50 transition-colors">
                           <td className="px-6 py-4 text-navy-900 font-medium">Single-Family Home (Standard)</td>
-                          <td className="px-6 py-4 text-navy-700">$400 - $600</td>
+                          <td className="px-6 py-4 text-navy-700">$400-$600</td>
                         </tr>
                         <tr className="hover:bg-navy-50 transition-colors">
                           <td className="px-6 py-4 text-navy-900 font-medium">Luxury/Waterfront Home</td>
-                          <td className="px-6 py-4 text-navy-700">$600 - $1,200+</td>
+                          <td className="px-6 py-4 text-navy-700">$600-$1,200+</td>
                         </tr>
                         <tr className="hover:bg-navy-50 transition-colors">
                           <td className="px-6 py-4 text-navy-900 font-medium">Condominium</td>
-                          <td className="px-6 py-4 text-navy-700">$350 - $500</td>
+                          <td className="px-6 py-4 text-navy-700">$350-$500</td>
                         </tr>
                         <tr className="hover:bg-navy-50 transition-colors">
                           <td className="px-6 py-4 text-navy-900 font-medium">Multi-Family Property (2-4 units)</td>
-                          <td className="px-6 py-4 text-navy-700">$600 - $900</td>
+                          <td className="px-6 py-4 text-navy-700">$600-$900</td>
                         </tr>
                         <tr className="hover:bg-navy-50 transition-colors">
                           <td className="px-6 py-4 text-navy-900 font-medium">Vacant Land</td>
-                          <td className="px-6 py-4 text-navy-700">$400 - $800</td>
+                          <td className="px-6 py-4 text-navy-700">$400-$800</td>
                         </tr>
                         <tr className="hover:bg-navy-50 transition-colors">
                           <td className="px-6 py-4 text-navy-900 font-medium">Commercial Property</td>
-                          <td className="px-6 py-4 text-navy-700">$1,500 - $5,000+</td>
+                          <td className="px-6 py-4 text-navy-700">$1,500-$5,000+</td>
                         </tr>
                       </tbody>
                     </table>
@@ -160,7 +160,7 @@ export default function HowMuchDoesAHomeAppraisalCostInWestPalmBeach20252026() {
                 </div>
 
               <p className="mb-8">
-                Keep in mind these are ballpark figures for 2025–2026. Your final cost depends on your property's unique characteristics.
+                Keep in mind these are ballpark figures for 2025-2026. Your final cost depends on your property's unique characteristics.
               </p>
 
               <h2 className="font-serif text-3xl font-bold text-navy-900 mb-6 mt-12">
@@ -171,58 +171,25 @@ export default function HowMuchDoesAHomeAppraisalCostInWestPalmBeach20252026() {
                 You're not just paying for a number on a page. A professional appraisal includes:
               </p>
 
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-start">
-                  <Check className="text-gold-600 mr-3 mt-1 flex-shrink-0" size={20} />
-                  <span><strong>Property Inspection</strong> – Full interior and exterior walkthrough</span>
-                </li>
-                <li className="flex items-start">
-                  <Check className="text-gold-600 mr-3 mt-1 flex-shrink-0" size={20} />
-                  <span><strong>Comparable Sales Analysis</strong> – Research on recent sales of similar properties</span>
-                </li>
-                <li className="flex items-start">
-                  <Check className="text-gold-600 mr-3 mt-1 flex-shrink-0" size={20} />
-                  <span><strong>Market Research</strong> – Neighborhood trends, school zones, and local conditions</span>
-                </li>
-                <li className="flex items-start">
-                  <Check className="text-gold-600 mr-3 mt-1 flex-shrink-0" size={20} />
-                  <span><strong>Detailed Report</strong> – Written documentation with photos, maps, and supporting data</span>
-                </li>
-                <li className="flex items-start">
-                  <Check className="text-gold-600 mr-3 mt-1 flex-shrink-0" size={20} />
-                  <span><strong>Condition Assessment</strong> – Observations on property condition and needed repairs</span>
-                </li>
-                <li className="flex items-start">
-                  <Check className="text-gold-600 mr-3 mt-1 flex-shrink-0" size={20} />
-                  <span><strong>Final Opinion of Value</strong> – Professional, unbiased market value conclusion</span>
-                </li>
+              <ul className="list-disc list-inside mb-8 space-y-2">
+                <li><strong>Property Inspection</strong> - Full interior and exterior walkthrough</li>
+                <li><strong>Comparable Sales Analysis</strong> - Research on recent sales of similar properties</li>
+                <li><strong>Market Research</strong> - Neighborhood trends, school zones, and local conditions</li>
+                <li><strong>Detailed Report</strong> - Written documentation with photos, maps, and supporting data</li>
+                <li><strong>Condition Assessment</strong> - Observations on property condition and needed repairs</li>
+                <li><strong>Final Opinion of Value</strong> - Professional, unbiased market value conclusion</li>
               </ul>
 
               <h2 className="font-serif text-3xl font-bold text-navy-900 mb-6 mt-12">
                 Who Pays for the Appraisal?
               </h2>
 
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-start">
-                  <span className="text-gold-600 mr-3">•</span>
-                  <span><strong>Buying a Home?</strong> Typically, the buyer pays as part of closing costs (though it's negotiable).</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-gold-600 mr-3">•</span>
-                  <span><strong>Refinancing?</strong> You (the homeowner) pay.</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-gold-600 mr-3">•</span>
-                  <span><strong>Selling and Want a Pre-Listing Appraisal?</strong> You pay upfront to price your home accurately.</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-gold-600 mr-3">•</span>
-                  <span><strong>Divorce or Legal Matter?</strong> Costs are usually split or determined by the court.</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-gold-600 mr-3">•</span>
-                  <span><strong>Estate/Tax Appraisal?</strong> Paid by the estate or individual requesting the valuation.</span>
-                </li>
+              <ul className="list-disc list-inside mb-8 space-y-2">
+                <li><strong>Buying a Home?</strong> Typically, the buyer pays as part of closing costs (though it's negotiable).</li>
+                <li><strong>Refinancing?</strong> You (the homeowner) pay.</li>
+                <li><strong>Selling and Want a Pre-Listing Appraisal?</strong> You pay upfront to price your home accurately.</li>
+                <li><strong>Divorce or Legal Matter?</strong> Costs are usually split or determined by the court.</li>
+                <li><strong>Estate/Tax Appraisal?</strong> Paid by the estate or individual requesting the valuation.</li>
               </ul>
 
               <h2 className="font-serif text-3xl font-bold text-navy-900 mb-6 mt-12">
@@ -233,27 +200,15 @@ export default function HowMuchDoesAHomeAppraisalCostInWestPalmBeach20252026() {
                 Standard Timeline:
               </p>
 
-              <ul className="space-y-2 mb-6">
-                <li className="flex items-start">
-                  <span className="text-gold-600 mr-3">•</span>
-                  <span>Ordering: Day 0</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-gold-600 mr-3">•</span>
-                  <span>Property Inspection: Days 1–3 (typically 30–90 minutes onsite)</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-gold-600 mr-3">•</span>
-                  <span>Research & Analysis: Days 3–5</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-gold-600 mr-3">•</span>
-                  <span>Report Delivery: Days 5–7</span>
-                </li>
+              <ul className="list-disc list-inside mb-6 space-y-2">
+                <li>Ordering: Day 0</li>
+                <li>Property Inspection: Days 1-3 (typically 30-90 minutes onsite)</li>
+                <li>Research & Analysis: Days 3-5</li>
+                <li>Report Delivery: Days 5-7</li>
               </ul>
 
               <p className="mb-8">
-                Need it sooner? Expedited service can deliver in 24–48 hours for an additional fee.
+                Need it sooner? Expedited service can deliver in 24-48 hours for an additional fee.
               </p>
 
               <h2 className="font-serif text-3xl font-bold text-navy-900 mb-6 mt-12">
@@ -267,53 +222,23 @@ export default function HowMuchDoesAHomeAppraisalCostInWestPalmBeach20252026() {
               <div className="grid md:grid-cols-2 gap-6 mb-8">
                 <div className="bg-white border-2 border-navy-200 rounded-xl p-6">
                   <h4 className="font-semibold text-navy-900 mb-4 text-lg">Free Online Estimates:</h4>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex items-start">
-                      <span className="text-navy-400 mr-2">•</span>
-                      <span>Based on public data only</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-navy-400 mr-2">•</span>
-                      <span>No property inspection</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-navy-400 mr-2">•</span>
-                      <span>Can be off by 10–20% or more</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-navy-400 mr-2">•</span>
-                      <span>Not accepted by lenders or courts</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-navy-400 mr-2">•</span>
-                      <span>Zero legal standing</span>
-                    </li>
+                  <ul className="list-disc list-inside space-y-2 text-sm">
+                    <li>Based on public data only</li>
+                    <li>No property inspection</li>
+                    <li>Can be off by 10-20% or more</li>
+                    <li>Not accepted by lenders or courts</li>
+                    <li>Zero legal standing</li>
                   </ul>
                 </div>
 
                 <div className="bg-gradient-to-br from-gold-50 to-gold-100 border-2 border-gold-400 rounded-xl p-6">
-                  <h4 className="font-semibold text-navy-900 mb-4 text-lg">Professional Appraisal ($400–$600+):</h4>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex items-start">
-                      <span className="text-gold-600 mr-2">•</span>
-                      <span>Physical property inspection</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-gold-600 mr-2">•</span>
-                      <span>Licensed, certified appraiser</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-gold-600 mr-2">•</span>
-                      <span>Typically accurate within 3–5%</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-gold-600 mr-2">•</span>
-                      <span>Accepted by lenders, attorneys, and the IRS</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-gold-600 mr-2">•</span>
-                      <span>Legally defensible</span>
-                    </li>
+                  <h4 className="font-semibold text-navy-900 mb-4 text-lg">Professional Appraisal ($400-$600+):</h4>
+                  <ul className="list-disc list-inside space-y-2 text-sm">
+                    <li>Physical property inspection</li>
+                    <li>Licensed, certified appraiser</li>
+                    <li>Typically accurate within 3-5%</li>
+                    <li>Accepted by lenders, attorneys, and the IRS</li>
+                    <li>Legally defensible</li>
                   </ul>
                 </div>
               </div>
@@ -326,66 +251,20 @@ export default function HowMuchDoesAHomeAppraisalCostInWestPalmBeach20252026() {
                 Tips for Getting the Best Value from Your Appraisal
               </h2>
 
-              <ol className="space-y-4 mb-8">
-                <li className="flex items-start">
-                  <span className="font-bold text-gold-600 mr-3">1.</span>
-                  <span><strong>Verify Credentials</strong> – Make sure your appraiser is licensed in Florida and experienced with your property type.</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="font-bold text-gold-600 mr-3">2.</span>
-                  <span><strong>Prepare Your Property</strong> – Clean, accessible, and well-maintained properties make the process smoother.</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="font-bold text-gold-600 mr-3">3.</span>
-                  <span><strong>Provide Documentation</strong> – Have records of recent upgrades, renovations, or improvements handy.</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="font-bold text-gold-600 mr-3">4.</span>
-                  <span><strong>Ask Questions Upfront</strong> – Get a written quote that details what's included and the timeline.</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="font-bold text-gold-600 mr-3">5.</span>
-                  <span><strong>Don't Shop Solely on Price</strong> – The cheapest option isn't always the best. Experience and accuracy matter more.</span>
-                </li>
+              <ol className="list-decimal list-inside mb-8 space-y-3">
+                <li><strong>Verify Credentials</strong> - Make sure your appraiser is licensed in Florida and experienced with your property type.</li>
+                <li><strong>Prepare Your Property</strong> - Clean, accessible, and well-maintained properties make the process smoother.</li>
+                <li><strong>Provide Documentation</strong> - Have records of recent upgrades, renovations, or improvements handy.</li>
+                <li><strong>Ask Questions Upfront</strong> - Get a written quote that details what's included and the timeline.</li>
+                <li><strong>Don't Shop Solely on Price</strong> - The cheapest option isn't always the best. Experience and accuracy matter more.</li>
               </ol>
 
               <h2 className="font-serif text-3xl font-bold text-navy-900 mb-6 mt-12">
-                Common Questions About Appraisal Costs in West Palm Beach
-              </h2>
-
-              <div className="space-y-6 mb-8">
-                <div className="bg-white border border-navy-200 rounded-xl p-6">
-                  <h4 className="font-semibold text-navy-900 mb-3">Q: Can I shop around for a cheaper appraisal?</h4>
-                  <p><strong>A:</strong> If you're ordering it yourself (pre-listing, estate, etc.), yes. For mortgage appraisals, your lender usually picks from an approved list to maintain objectivity.</p>
-                </div>
-
-                <div className="bg-white border border-navy-200 rounded-xl p-6">
-                  <h4 className="font-semibold text-navy-900 mb-3">Q: Are appraisal fees negotiable?</h4>
-                  <p><strong>A:</strong> Generally, no. Fees reflect the time, expertise, and research required. However, you might find slightly better rates during slower market periods.</p>
-                </div>
-
-                <div className="bg-white border border-navy-200 rounded-xl p-6">
-                  <h4 className="font-semibold text-navy-900 mb-3">Q: What if I disagree with the appraisal?</h4>
-                  <p><strong>A:</strong> You can request a reconsideration of value if you have evidence of errors or missed comparable sales. However, you still need to pay for the service rendered.</p>
-                </div>
-
-                <div className="bg-white border border-navy-200 rounded-xl p-6">
-                  <h4 className="font-semibold text-navy-900 mb-3">Q: Is a more expensive appraisal better?</h4>
-                  <p><strong>A:</strong> Not necessarily. Higher fees often reflect property complexity or appraiser specialization, not a "better" value. Focus on qualifications and experience.</p>
-                </div>
-
-                <div className="bg-white border border-navy-200 rounded-xl p-6">
-                  <h4 className="font-semibold text-navy-900 mb-3">Q: Do appraisers charge extra for travel?</h4>
-                  <p><strong>A:</strong> Most include reasonable travel within their service area. Remote locations may incur additional charges, which should be disclosed upfront.</p>
-                </div>
-              </div>
-
-              <h2 className="font-serif text-3xl font-bold text-navy-900 mb-6 mt-12">
-                Final Thoughts: What to Expect in 2025–2026
+                Final Thoughts: What to Expect in 2025-2026
               </h2>
 
               <p className="mb-6">
-                Home appraisal costs in West Palm Beach remain fairly consistent year over year, with standard residential properties typically ranging from $400 to $600. Luxury, waterfront, or complex properties will cost more—sometimes significantly so.
+                Home appraisal costs in West Palm Beach remain fairly consistent year over year, with standard residential properties typically ranging from $400 to $600. Luxury, waterfront, or complex properties will cost more - sometimes significantly so.
               </p>
 
               <p className="mb-8">
