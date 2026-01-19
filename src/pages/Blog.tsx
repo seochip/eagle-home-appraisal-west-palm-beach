@@ -7,13 +7,6 @@ import { OrganizationSchema, BreadcrumbSchema } from '../components/Schema';
 export default function Blog() {
   const posts = [
     {
-      title: 'How Much Does A Home Appraisal Cost In West Palm Beach 2025-2026?',
-      date: 'December 2, 2025',
-      excerpt: 'Discover the cost of home appraisals in West Palm Beach for 2025-2026. Learn about factors affecting pricing, what\'s included, and how to get the best value.',
-      image: '/eha-west-palm-beach-how-much-does-a-home-appraisal-cost-in-west-palm-beach-2025-2026.png',
-      slug: '/blog/how-much-does-a-home-appraisal-cost-in-west-palm-beach-2025-2026'
-    },
-    {
       title: 'Understanding Property Appraisals in South Florida',
       date: 'March 15, 2024',
       excerpt: 'Learn the key factors that influence property values in the Palm Beach County real estate market.',

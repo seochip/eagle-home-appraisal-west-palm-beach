@@ -57,7 +57,6 @@ import CharitableRemainderTrustValuation from './pages/services/CharitableRemain
 import PortfolioValuation from './pages/services/PortfolioValuation';
 import InsuranceReplacementCost from './pages/services/InsuranceReplacementCost';
 import FinancialPlanningAppraisal from './pages/services/FinancialPlanningAppraisal';
-import HowMuchDoesAHomeAppraisalCostInWestPalmBeach20252026 from './pages/blog/HowMuchDoesAHomeAppraisalCostInWestPalmBeach20252026';
 
 function App() {
   return (
@@ -121,7 +120,6 @@ function App() {
             <Route path="/services/portfolio-valuation" element={<PortfolioValuation />} />
             <Route path="/services/insurance-replacement-cost" element={<InsuranceReplacementCost />} />
             <Route path="/services/financial-planning-appraisal" element={<FinancialPlanningAppraisal />} />
-            <Route path="/blog/how-much-does-a-home-appraisal-cost-in-west-palm-beach-2025-2026" element={<HowMuchDoesAHomeAppraisalCostInWestPalmBeach20252026 />} />
           </Routes>
           <PremiumFooter />
         </div>
