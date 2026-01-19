@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Calendar, MapPin } from 'lucide-react';
+import { Calendar, MapPin, Check } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 import { OrganizationSchema, BreadcrumbSchema } from '../../components/Schema';
 import PremiumHeader from '../../components/PremiumHeader';
@@ -160,7 +160,7 @@ export default function HowMuchDoesAHomeAppraisalCostInWestPalmBeach20252026() {
                 </div>
 
               <p className="mb-8">
-                Keep in mind these are ballpark figures for 2025\u20132026. Your final cost depends on your property's unique characteristics.
+                Keep in mind these are ballpark figures for 2025–2026. Your final cost depends on your property's unique characteristics.
               </p>
 
               <h2 className="font-serif text-3xl font-bold text-navy-900 mb-6 mt-12">
@@ -173,28 +173,28 @@ export default function HowMuchDoesAHomeAppraisalCostInWestPalmBeach20252026() {
 
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start">
-                  <span className="text-gold-600 mr-3 text-xl">\u2713</span>
-                  <span><strong>Property Inspection</strong> \u2013 Full interior and exterior walkthrough</span>
+                  <Check className="text-gold-600 mr-3 mt-1 flex-shrink-0" size={20} />
+                  <span><strong>Property Inspection</strong> – Full interior and exterior walkthrough</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-gold-600 mr-3 text-xl">\u2713</span>
-                  <span><strong>Comparable Sales Analysis</strong> \u2013 Research on recent sales of similar properties</span>
+                  <Check className="text-gold-600 mr-3 mt-1 flex-shrink-0" size={20} />
+                  <span><strong>Comparable Sales Analysis</strong> – Research on recent sales of similar properties</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-gold-600 mr-3 text-xl">\u2713</span>
-                  <span><strong>Market Research</strong> \u2013 Neighborhood trends, school zones, and local conditions</span>
+                  <Check className="text-gold-600 mr-3 mt-1 flex-shrink-0" size={20} />
+                  <span><strong>Market Research</strong> – Neighborhood trends, school zones, and local conditions</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-gold-600 mr-3 text-xl">\u2713</span>
-                  <span><strong>Detailed Report</strong> \u2013 Written documentation with photos, maps, and supporting data</span>
+                  <Check className="text-gold-600 mr-3 mt-1 flex-shrink-0" size={20} />
+                  <span><strong>Detailed Report</strong> – Written documentation with photos, maps, and supporting data</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-gold-600 mr-3 text-xl">\u2713</span>
-                  <span><strong>Condition Assessment</strong> \u2013 Observations on property condition and needed repairs</span>
+                  <Check className="text-gold-600 mr-3 mt-1 flex-shrink-0" size={20} />
+                  <span><strong>Condition Assessment</strong> – Observations on property condition and needed repairs</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-gold-600 mr-3 text-xl">\u2713</span>
-                  <span><strong>Final Opinion of Value</strong> \u2013 Professional, unbiased market value conclusion</span>
+                  <Check className="text-gold-600 mr-3 mt-1 flex-shrink-0" size={20} />
+                  <span><strong>Final Opinion of Value</strong> – Professional, unbiased market value conclusion</span>
                 </li>
               </ul>
 
@@ -204,23 +204,23 @@ export default function HowMuchDoesAHomeAppraisalCostInWestPalmBeach20252026() {
 
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start">
-                  <span className="text-gold-600 mr-3">\u2022</span>
+                  <span className="text-gold-600 mr-3">•</span>
                   <span><strong>Buying a Home?</strong> Typically, the buyer pays as part of closing costs (though it's negotiable).</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-gold-600 mr-3">\u2022</span>
+                  <span className="text-gold-600 mr-3">•</span>
                   <span><strong>Refinancing?</strong> You (the homeowner) pay.</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-gold-600 mr-3">\u2022</span>
+                  <span className="text-gold-600 mr-3">•</span>
                   <span><strong>Selling and Want a Pre-Listing Appraisal?</strong> You pay upfront to price your home accurately.</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-gold-600 mr-3">\u2022</span>
+                  <span className="text-gold-600 mr-3">•</span>
                   <span><strong>Divorce or Legal Matter?</strong> Costs are usually split or determined by the court.</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-gold-600 mr-3">\u2022</span>
+                  <span className="text-gold-600 mr-3">•</span>
                   <span><strong>Estate/Tax Appraisal?</strong> Paid by the estate or individual requesting the valuation.</span>
                 </li>
               </ul>
@@ -235,25 +235,25 @@ export default function HowMuchDoesAHomeAppraisalCostInWestPalmBeach20252026() {
 
               <ul className="space-y-2 mb-6">
                 <li className="flex items-start">
-                  <span className="text-gold-600 mr-3">\u2022</span>
+                  <span className="text-gold-600 mr-3">•</span>
                   <span>Ordering: Day 0</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-gold-600 mr-3">\u2022</span>
-                  <span>Property Inspection: Days 1\u20133 (typically 30\u201390 minutes onsite)</span>
+                  <span className="text-gold-600 mr-3">•</span>
+                  <span>Property Inspection: Days 1–3 (typically 30–90 minutes onsite)</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-gold-600 mr-3">\u2022</span>
-                  <span>Research & Analysis: Days 3\u20135</span>
+                  <span className="text-gold-600 mr-3">•</span>
+                  <span>Research & Analysis: Days 3–5</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-gold-600 mr-3">\u2022</span>
-                  <span>Report Delivery: Days 5\u20137</span>
+                  <span className="text-gold-600 mr-3">•</span>
+                  <span>Report Delivery: Days 5–7</span>
                 </li>
               </ul>
 
               <p className="mb-8">
-                Need it sooner? Expedited service can deliver in 24\u201348 hours for an additional fee.
+                Need it sooner? Expedited service can deliver in 24–48 hours for an additional fee.
               </p>
 
               <h2 className="font-serif text-3xl font-bold text-navy-900 mb-6 mt-12">
@@ -269,49 +269,49 @@ export default function HowMuchDoesAHomeAppraisalCostInWestPalmBeach20252026() {
                   <h4 className="font-semibold text-navy-900 mb-4 text-lg">Free Online Estimates:</h4>
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-start">
-                      <span className="text-navy-400 mr-2">\u2022</span>
+                      <span className="text-navy-400 mr-2">•</span>
                       <span>Based on public data only</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-navy-400 mr-2">\u2022</span>
+                      <span className="text-navy-400 mr-2">•</span>
                       <span>No property inspection</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-navy-400 mr-2">\u2022</span>
-                      <span>Can be off by 10\u201320% or more</span>
+                      <span className="text-navy-400 mr-2">•</span>
+                      <span>Can be off by 10–20% or more</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-navy-400 mr-2">\u2022</span>
+                      <span className="text-navy-400 mr-2">•</span>
                       <span>Not accepted by lenders or courts</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-navy-400 mr-2">\u2022</span>
+                      <span className="text-navy-400 mr-2">•</span>
                       <span>Zero legal standing</span>
                     </li>
                   </ul>
                 </div>
 
                 <div className="bg-gradient-to-br from-gold-50 to-gold-100 border-2 border-gold-400 rounded-xl p-6">
-                  <h4 className="font-semibold text-navy-900 mb-4 text-lg">Professional Appraisal ($400\u2013$600+):</h4>
+                  <h4 className="font-semibold text-navy-900 mb-4 text-lg">Professional Appraisal ($400–$600+):</h4>
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-start">
-                      <span className="text-gold-600 mr-2">\u2022</span>
+                      <span className="text-gold-600 mr-2">•</span>
                       <span>Physical property inspection</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-gold-600 mr-2">\u2022</span>
+                      <span className="text-gold-600 mr-2">•</span>
                       <span>Licensed, certified appraiser</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-gold-600 mr-2">\u2022</span>
-                      <span>Typically accurate within 3\u20135%</span>
+                      <span className="text-gold-600 mr-2">•</span>
+                      <span>Typically accurate within 3–5%</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-gold-600 mr-2">\u2022</span>
+                      <span className="text-gold-600 mr-2">•</span>
                       <span>Accepted by lenders, attorneys, and the IRS</span>
                     </li>
                     <li className="flex items-start">
-                      <span className="text-gold-600 mr-2">\u2022</span>
+                      <span className="text-gold-600 mr-2">•</span>
                       <span>Legally defensible</span>
                     </li>
                   </ul>
@@ -329,23 +329,23 @@ export default function HowMuchDoesAHomeAppraisalCostInWestPalmBeach20252026() {
               <ol className="space-y-4 mb-8">
                 <li className="flex items-start">
                   <span className="font-bold text-gold-600 mr-3">1.</span>
-                  <span><strong>Verify Credentials</strong> \u2013 Make sure your appraiser is licensed in Florida and experienced with your property type.</span>
+                  <span><strong>Verify Credentials</strong> – Make sure your appraiser is licensed in Florida and experienced with your property type.</span>
                 </li>
                 <li className="flex items-start">
                   <span className="font-bold text-gold-600 mr-3">2.</span>
-                  <span><strong>Prepare Your Property</strong> \u2013 Clean, accessible, and well-maintained properties make the process smoother.</span>
+                  <span><strong>Prepare Your Property</strong> – Clean, accessible, and well-maintained properties make the process smoother.</span>
                 </li>
                 <li className="flex items-start">
                   <span className="font-bold text-gold-600 mr-3">3.</span>
-                  <span><strong>Provide Documentation</strong> \u2013 Have records of recent upgrades, renovations, or improvements handy.</span>
+                  <span><strong>Provide Documentation</strong> – Have records of recent upgrades, renovations, or improvements handy.</span>
                 </li>
                 <li className="flex items-start">
                   <span className="font-bold text-gold-600 mr-3">4.</span>
-                  <span><strong>Ask Questions Upfront</strong> \u2013 Get a written quote that details what's included and the timeline.</span>
+                  <span><strong>Ask Questions Upfront</strong> – Get a written quote that details what's included and the timeline.</span>
                 </li>
                 <li className="flex items-start">
                   <span className="font-bold text-gold-600 mr-3">5.</span>
-                  <span><strong>Don't Shop Solely on Price</strong> \u2013 The cheapest option isn't always the best. Experience and accuracy matter more.</span>
+                  <span><strong>Don't Shop Solely on Price</strong> – The cheapest option isn't always the best. Experience and accuracy matter more.</span>
                 </li>
               </ol>
 
@@ -381,11 +381,11 @@ export default function HowMuchDoesAHomeAppraisalCostInWestPalmBeach20252026() {
               </div>
 
               <h2 className="font-serif text-3xl font-bold text-navy-900 mb-6 mt-12">
-                Final Thoughts: What to Expect in 2025\u20132026
+                Final Thoughts: What to Expect in 2025–2026
               </h2>
 
               <p className="mb-6">
-                Home appraisal costs in West Palm Beach remain fairly consistent year over year, with standard residential properties typically ranging from $400 to $600. Luxury, waterfront, or complex properties will cost more\u2014sometimes significantly so.
+                Home appraisal costs in West Palm Beach remain fairly consistent year over year, with standard residential properties typically ranging from $400 to $600. Luxury, waterfront, or complex properties will cost more—sometimes significantly so.
               </p>
 
               <p className="mb-8">
