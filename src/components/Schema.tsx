@@ -14,11 +14,11 @@ export function OrganizationSchema({ showFull = false }: OrganizationSchemaProps
     "name": "Eagle Home Appraisal",
     "description": "Independent real estate appraiser in West Palm Beach specializing in private divorce, estate, tax appeal, and litigation valuations.",
     "url": "https://eaglehomeappraisalwestpalmbeach.com/",
-    "telephone": "+1-561-282-5509",
+    "telephone": "+1-561-493-3707",
     "email": "marlene@eaglehomeappraisal.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "1500 North Congress Ave, Suite 410",
+      "streetAddress": "2029 Okeechobee Blvd",
       "addressLocality": "West Palm Beach",
       "addressRegion": "FL",
       "postalCode": "33409",
@@ -26,8 +26,8 @@ export function OrganizationSchema({ showFull = false }: OrganizationSchemaProps
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "26.7153",
-      "longitude": "-80.0534"
+      "latitude": "26.7078",
+      "longitude": "-80.0834"
     },
     "areaServed": [
       "West Palm Beach",

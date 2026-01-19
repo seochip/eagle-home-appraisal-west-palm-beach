@@ -124,11 +124,11 @@ export default function PremiumFooter() {
               <ul className="space-y-4">
                 <li>
                   <a
-                    href="tel:5612825509"
+                    href="tel:5614933707"
                     className="flex items-start space-x-3 text-navy-200 hover:text-gold-400 transition-colors duration-300 group"
                   >
                     <Phone className="w-5 h-5 text-gold-500 mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform" />
-                    <span className="text-sm">(561) 282-5509</span>
+                    <span className="text-sm">(561) 493-3707</span>
                   </a>
                 </li>
                 <li>
@@ -144,8 +144,7 @@ export default function PremiumFooter() {
               <div className="flex items-start space-x-3 text-navy-200">
                 <MapPin className="w-5 h-5 text-gold-500 mt-0.5 flex-shrink-0" />
                 <span className="text-sm">
-                  1500 North Congress Ave<br />
-                  Suite 410<br />
+                  2029 Okeechobee Blvd<br />
                   West Palm Beach, FL 33409
                 </span>
               </div>

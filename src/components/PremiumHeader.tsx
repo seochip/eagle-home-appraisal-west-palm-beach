@@ -161,7 +161,7 @@ export default function PremiumHeader() {
 
             <div className="hidden lg:flex items-center space-x-4">
               <a
-                href="tel:5612825509"
+                href="tel:5614933707"
                 className={`flex items-center space-x-2 px-6 py-3 rounded-full font-medium transition-all duration-300 ${
                   (isScrolled || !isHomePage)
                     ? 'bg-gold-600 text-white hover:bg-gold-700'
@@ -169,7 +169,7 @@ export default function PremiumHeader() {
                 }`}
               >
                 <Phone className="w-4 h-4" />
-                <span>(561) 282-5509</span>
+                <span>(561) 493-3707</span>
               </a>
             </div>
 
@@ -301,11 +301,11 @@ export default function PremiumHeader() {
 
                 <div className="p-6 border-t border-navy-100">
                   <a
-                    href="tel:5612825509"
+                    href="tel:5614933707"
                     className="flex items-center justify-center space-x-2 w-full px-6 py-4 bg-gold-600 text-white rounded-full font-medium hover:bg-gold-700 transition-colors"
                   >
                     <Phone className="w-5 h-5" />
-                    <span>(561) 282-5509</span>
+                    <span>(561) 493-3707</span>
                   </a>
                 </div>
               </div>

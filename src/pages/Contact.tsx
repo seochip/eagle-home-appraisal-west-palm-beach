@@ -85,7 +85,7 @@ export default function Contact() {
     <>
       <Helmet>
         <title>Contact Us | Eagle Home Appraisal - West Palm Beach</title>
-        <meta name="description" content="Contact Eagle Home Appraisal for a free quote. Call (561) 282-5509 or submit a request online. Located in West Palm Beach serving all of Palm Beach County." />
+        <meta name="description" content="Contact Eagle Home Appraisal for a free quote. Call (561) 493-3707 or submit a request online. Located in West Palm Beach serving all of Palm Beach County." />
       </Helmet>
       <OrganizationSchema />
       <BreadcrumbSchema items={[{ name: 'Contact', path: '/contact' }]} />
@@ -277,7 +277,7 @@ export default function Contact() {
 
                     <div className="space-y-6">
                       <a
-                        href="tel:5612825509"
+                        href="tel:5614933707"
                         className="flex items-start space-x-4 group"
                       >
                         <div className="w-12 h-12 rounded-xl bg-gold-500 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
@@ -286,7 +286,7 @@ export default function Contact() {
                         <div>
                           <div className="font-medium text-navy-200 mb-1">Phone</div>
                           <div className="text-xl font-semibold group-hover:text-gold-400 transition-colors">
-                            (561) 282-5509
+                            (561) 493-3707
                           </div>
                         </div>
                       </a>
@@ -313,8 +313,7 @@ export default function Contact() {
                         <div>
                           <div className="font-medium text-navy-200 mb-1">Address</div>
                           <div className="text-lg">
-                            1500 North Congress Ave<br />
-                            Suite 410<br />
+                            2029 Okeechobee Blvd<br />
                             West Palm Beach, FL 33409
                           </div>
                         </div>
@@ -339,7 +338,7 @@ export default function Contact() {
 
                 <div className="rounded-3xl overflow-hidden shadow-2xl">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.2835!2d-80.0725!3d26.7153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d8d678c3733fc1%3A0x4e5622e8dd44c4ff!2s1500%20N%20Congress%20Ave%2C%20West%20Palm%20Beach%2C%20FL%2033409!5e0!3m2!1sen!2sus!4v1635000000000!5m2!1sen!2sus"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.5!2d-80.0834!3d26.7078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d8d6b1c1f1c1c1%3A0x1c1c1c1c1c1c1c1c!2s2029%20Okeechobee%20Blvd%2C%20West%20Palm%20Beach%2C%20FL%2033409!5e0!3m2!1sen!2sus!4v1635000000000!5m2!1sen!2sus"
                     width="100%"
                     height="300"
                     style={{ border: 0 }}
