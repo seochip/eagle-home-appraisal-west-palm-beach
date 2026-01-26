@@ -10,6 +10,7 @@ import AreasWeServe from './pages/AreasWeServe';
 import Testimonials from './pages/Testimonials';
 import Contact from './pages/Contact';
 import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
 import AllAppraisalServices from './pages/AllAppraisalServices';
 import EstatePlanningStepUpBasis from './pages/services/EstatePlanningStepUpBasis';
 import ResidentialAppraisals from './pages/services/ResidentialAppraisals';
@@ -96,6 +97,7 @@ function App() {
             <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/services/all-appraisal-services" element={<AllAppraisalServices />} />
             <Route path="/services/estate-planning-step-up-basis" element={<EstatePlanningStepUpBasis />} />
             <Route path="/categories/divorce-family-law-appraisals" element={<DivorceAndFamilyLawAppraisals />} />
