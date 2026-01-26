@@ -82,48 +82,69 @@ export default function BlogPost() {
   };
 
   const renderContent = (content: string) => {
-    const sections = content.split(/\n\n+/);
+    const lines = content.split('\n');
+    const elements: JSX.Element[] = [];
+    let currentList: string[] = [];
+    let key = 0;
 
-    return sections.map((section, index) => {
-      if (section.startsWith('## ')) {
-        return (
-          <h2 key={index} className="font-serif text-3xl font-bold text-navy-900 mt-12 mb-6">
-            {section.replace('## ', '')}
-          </h2>
-        );
-      } else if (section.startsWith('### ')) {
-        return (
-          <h3 key={index} className="font-serif text-2xl font-semibold text-navy-800 mt-8 mb-4">
-            {section.replace('### ', '')}
-          </h3>
-        );
-      } else if (section.startsWith('- ')) {
-        const items = section.split('\n');
-        return (
-          <ul key={index} className="space-y-2 mb-6 ml-6">
-            {items.map((item, i) => (
-              <li key={i} className="text-navy-700 leading-relaxed list-disc">
-                {item.replace(/^- /, '').replace(/^\*\*(.+?)\*\*/, '<strong>$1</strong>')}
+    const flushList = () => {
+      if (currentList.length > 0) {
+        elements.push(
+          <ul key={`list-${key++}`} className="list-disc ml-8 mb-6 space-y-2">
+            {currentList.map((item, i) => (
+              <li key={i} className="text-navy-700 leading-relaxed text-lg">
+                {item}
               </li>
             ))}
           </ul>
         );
-      } else if (section.trim().startsWith('**')) {
-        return (
-          <div key={index} className="bg-navy-50 border-l-4 border-gold-600 p-6 rounded-r-xl mb-6">
-            <p className="text-navy-800 leading-relaxed font-medium">
-              {section.replace(/\*\*/g, '')}
-            </p>
-          </div>
-        );
+        currentList = [];
+      }
+    };
+
+    lines.forEach((line, index) => {
+      const trimmedLine = line.trim();
+
+      if (!trimmedLine) {
+        flushList();
+        return;
+      }
+
+      if (trimmedLine.startsWith('• ')) {
+        currentList.push(trimmedLine.substring(2));
       } else {
-        return (
-          <p key={index} className="text-navy-700 leading-relaxed mb-6 text-lg">
-            {section}
-          </p>
-        );
+        flushList();
+
+        const isHeading = /^[A-Z]/.test(trimmedLine) &&
+                         trimmedLine.length < 100 &&
+                         !trimmedLine.endsWith('.') &&
+                         !trimmedLine.includes('$') &&
+                         lines[index + 1]?.trim() === '';
+
+        if (isHeading) {
+          elements.push(
+            <h2 key={`heading-${key++}`} className="font-serif text-2xl sm:text-3xl font-bold text-navy-900 mt-10 mb-4">
+              {trimmedLine}
+            </h2>
+          );
+        } else if (trimmedLine.match(/^\d+\./)) {
+          elements.push(
+            <h3 key={`subheading-${key++}`} className="font-serif text-xl font-semibold text-navy-800 mt-6 mb-3">
+              {trimmedLine}
+            </h3>
+          );
+        } else {
+          elements.push(
+            <p key={`para-${key++}`} className="text-navy-700 leading-relaxed mb-4 text-lg">
+              {trimmedLine}
+            </p>
+          );
+        }
       }
     });
+
+    flushList();
+    return elements;
   };
 
   return (
